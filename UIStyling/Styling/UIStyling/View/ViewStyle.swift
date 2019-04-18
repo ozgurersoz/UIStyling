@@ -10,21 +10,28 @@ import UIKit
 
 enum ViewStyle {
     case redCircle(_ radius: CGFloat)
-    case gradiented
+    case gradientedCircle(_ radius: CGFloat)
+    case greenSquare
     case none
     
     private var style: Style<ViewProp> {
         switch self {
         case .redCircle(let radius):
-            return .with(props:
+            return .with(
                 .cornerRadius(radius),
                 .backgroundColor(.red),
                 .clipsToBounds
             )
-        case .gradiented:
-            return .with(props:
-                .gradient(fromColor: .white, toColor: .gray),
-                .borderColor(.gray)
+        case .gradientedCircle(let radius):
+            return .with(
+                .cornerRadius(radius),
+                .gradient(fromColor: .green, toColor: .black),
+                .borderColor(.white),
+                .clipsToBounds
+            )
+        case .greenSquare:
+            return .with(
+                .backgroundColor(.green)
             )
         default:
             return Style()

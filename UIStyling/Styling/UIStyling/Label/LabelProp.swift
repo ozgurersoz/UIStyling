@@ -17,7 +17,7 @@ enum LabelProp: StylingProp {
     case color(_: UIColor)
     case backgroundColor(_: UIColor)
     case font(_: UIFont)
-    case numberOf(lines: Int)
+    case numberOfLines(_ lines: Int)
     
     func bind(to label: UILabel) {
         switch self {
@@ -31,7 +31,7 @@ enum LabelProp: StylingProp {
             label.backgroundColor = color
         case .font(let font):
             label.font = font
-        case .numberOf(let lines):
+        case .numberOfLines(let lines):
             label.numberOfLines = lines
         }
     }

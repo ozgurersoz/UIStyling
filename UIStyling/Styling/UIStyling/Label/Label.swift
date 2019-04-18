@@ -23,9 +23,11 @@ class Label: UILabel {
         }
     }
 
-    func set(props: LabelProp...) {
+    func setProps(_ props: LabelProp...) {
         props.forEach { (prop) in
             prop.bind(to: self)
         }
     }
 }
+
+

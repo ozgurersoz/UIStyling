@@ -25,12 +25,13 @@ enum ViewProp: StylingProp {
         case .cornerRadius(let radius):
             view.layer.cornerRadius = radius
         case .borderColor(let color):
+            view.layer.borderWidth = 1
             view.layer.borderColor = color.cgColor
         case .gradient(let from, let to):
             let gradient = CAGradientLayer()
-            gradient.frame = view.bounds
-            print(view.bounds)
+            gradient.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
             gradient.colors = [from.cgColor, to.cgColor]
+            gradient.locations = [0, 1]
             view.layer.insertSublayer(gradient, at: 0)
         case .clipsToBounds:
             view.clipsToBounds = true

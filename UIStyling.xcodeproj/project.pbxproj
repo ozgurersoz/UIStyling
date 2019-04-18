@@ -8,13 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		D5B552A60F72D4090474D9B5 /* Pods_UIStyling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5BF5FAC688529B804856AA /* Pods_UIStyling.framework */; };
-		DF466DC62236467300300FAD /* CircleRedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF466DC52236467300300FAD /* CircleRedView.swift */; };
-		DF466DC822364D2600300FAD /* ViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF466DC722364D2600300FAD /* ViewComponent.swift */; };
+		DF4458A52254974C00D800FB /* ImageViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF44589A2254974C00D800FB /* ImageViewStyle.swift */; };
+		DF4458A62254974C00D800FB /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF44589B2254974C00D800FB /* ImageView.swift */; };
+		DF4458A72254974C00D800FB /* ImageViewProp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF44589C2254974C00D800FB /* ImageViewProp.swift */; };
+		DF4458A82254974C00D800FB /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF44589E2254974C00D800FB /* StackView.swift */; };
+		DF4458A92254974C00D800FB /* StackViewProp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF44589F2254974C00D800FB /* StackViewProp.swift */; };
+		DF4458AA2254974C00D800FB /* StackViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4458A02254974C00D800FB /* StackViewStyle.swift */; };
+		DF4458AB2254974C00D800FB /* ButtonProp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4458A22254974C00D800FB /* ButtonProp.swift */; };
+		DF4458AC2254974C00D800FB /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4458A32254974C00D800FB /* Button.swift */; };
+		DF4458AD2254974C00D800FB /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4458A42254974C00D800FB /* ButtonStyle.swift */; };
+		DF4458AF2254985600D800FB /* StylingProp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4458AE2254985600D800FB /* StylingProp.swift */; };
 		DF466DCB2236502300300FAD /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF466DCA2236502300300FAD /* View.swift */; };
-		DF466DCD223650E200300FAD /* FeaturedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF466DCC223650E200300FAD /* FeaturedView.swift */; };
-		DF466DCF223652A700300FAD /* DefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF466DCE223652A700300FAD /* DefaultView.swift */; };
 		DF466DD122368BFE00300FAD /* ViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF466DD022368BFE00300FAD /* ViewStyle.swift */; };
 		DF466DD322368C1400300FAD /* ViewProp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF466DD222368C1400300FAD /* ViewProp.swift */; };
+		DF645066225CB68D00A88D13 /* UIHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF645065225CB68D00A88D13 /* UIHeaderView.swift */; };
+		DF645068225CB7B400A88D13 /* HeaderViewProp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF645067225CB7B400A88D13 /* HeaderViewProp.swift */; };
+		DF64506A225CB7BE00A88D13 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF645069225CB7BE00A88D13 /* HeaderView.swift */; };
+		DF64506C225CB7C700A88D13 /* HeaderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF64506B225CB7C700A88D13 /* HeaderStyle.swift */; };
 		DFDBE4022232554100A553E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDBE4012232554100A553E1 /* AppDelegate.swift */; };
 		DFDBE4042232554100A553E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDBE4032232554100A553E1 /* ViewController.swift */; };
 		DFDBE4072232554100A553E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFDBE4052232554100A553E1 /* Main.storyboard */; };
@@ -41,13 +51,23 @@
 		26173A92F98E9B29334B8F89 /* Pods-UIStyling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIStyling.debug.xcconfig"; path = "Target Support Files/Pods-UIStyling/Pods-UIStyling.debug.xcconfig"; sourceTree = "<group>"; };
 		527F0322855F0CABB5E63A59 /* Pods-UIStyling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIStyling.release.xcconfig"; path = "Target Support Files/Pods-UIStyling/Pods-UIStyling.release.xcconfig"; sourceTree = "<group>"; };
 		6D5BF5FAC688529B804856AA /* Pods_UIStyling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIStyling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF466DC52236467300300FAD /* CircleRedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleRedView.swift; sourceTree = "<group>"; };
-		DF466DC722364D2600300FAD /* ViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewComponent.swift; sourceTree = "<group>"; };
+		DF44589A2254974C00D800FB /* ImageViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewStyle.swift; sourceTree = "<group>"; };
+		DF44589B2254974C00D800FB /* ImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		DF44589C2254974C00D800FB /* ImageViewProp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewProp.swift; sourceTree = "<group>"; };
+		DF44589E2254974C00D800FB /* StackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		DF44589F2254974C00D800FB /* StackViewProp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewProp.swift; sourceTree = "<group>"; };
+		DF4458A02254974C00D800FB /* StackViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewStyle.swift; sourceTree = "<group>"; };
+		DF4458A22254974C00D800FB /* ButtonProp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonProp.swift; sourceTree = "<group>"; };
+		DF4458A32254974C00D800FB /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		DF4458A42254974C00D800FB /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		DF4458AE2254985600D800FB /* StylingProp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylingProp.swift; sourceTree = "<group>"; };
 		DF466DCA2236502300300FAD /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		DF466DCC223650E200300FAD /* FeaturedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedView.swift; sourceTree = "<group>"; };
-		DF466DCE223652A700300FAD /* DefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultView.swift; sourceTree = "<group>"; };
 		DF466DD022368BFE00300FAD /* ViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStyle.swift; sourceTree = "<group>"; };
 		DF466DD222368C1400300FAD /* ViewProp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProp.swift; sourceTree = "<group>"; };
+		DF645065225CB68D00A88D13 /* UIHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHeaderView.swift; sourceTree = "<group>"; };
+		DF645067225CB7B400A88D13 /* HeaderViewProp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewProp.swift; sourceTree = "<group>"; };
+		DF645069225CB7BE00A88D13 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		DF64506B225CB7C700A88D13 /* HeaderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStyle.swift; sourceTree = "<group>"; };
 		DFDBE3FE2232554100A553E1 /* UIStyling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIStyling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFDBE4012232554100A553E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFDBE4032232554100A553E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +120,36 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DF4458992254974C00D800FB /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				DF44589A2254974C00D800FB /* ImageViewStyle.swift */,
+				DF44589B2254974C00D800FB /* ImageView.swift */,
+				DF44589C2254974C00D800FB /* ImageViewProp.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		DF44589D2254974C00D800FB /* StackView */ = {
+			isa = PBXGroup;
+			children = (
+				DF44589E2254974C00D800FB /* StackView.swift */,
+				DF44589F2254974C00D800FB /* StackViewProp.swift */,
+				DF4458A02254974C00D800FB /* StackViewStyle.swift */,
+			);
+			path = StackView;
+			sourceTree = "<group>";
+		};
+		DF4458A12254974C00D800FB /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				DF4458A22254974C00D800FB /* ButtonProp.swift */,
+				DF4458A32254974C00D800FB /* Button.swift */,
+				DF4458A42254974C00D800FB /* ButtonStyle.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		DF466DC32236455900300FAD /* Label */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,25 +160,25 @@
 			path = Label;
 			sourceTree = "<group>";
 		};
-		DF466DC42236466000300FAD /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-				DF466DC52236467300300FAD /* CircleRedView.swift */,
-				DF466DCC223650E200300FAD /* FeaturedView.swift */,
-				DF466DCE223652A700300FAD /* DefaultView.swift */,
-			);
-			path = CustomViews;
-			sourceTree = "<group>";
-		};
 		DF466DC92236501900300FAD /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DF466DC722364D2600300FAD /* ViewComponent.swift */,
 				DF466DCA2236502300300FAD /* View.swift */,
 				DF466DD022368BFE00300FAD /* ViewStyle.swift */,
 				DF466DD222368C1400300FAD /* ViewProp.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DF645064225CB67D00A88D13 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				DF645065225CB68D00A88D13 /* UIHeaderView.swift */,
+				DF645067225CB7B400A88D13 /* HeaderViewProp.swift */,
+				DF645069225CB7BE00A88D13 /* HeaderView.swift */,
+				DF64506B225CB7C700A88D13 /* HeaderStyle.swift */,
+			);
+			path = HeaderView;
 			sourceTree = "<group>";
 		};
 		DFDBE3F52232554100A553E1 = {
@@ -177,12 +227,24 @@
 		DFDBE4212232554900A553E1 /* Styling */ = {
 			isa = PBXGroup;
 			children = (
-				DF466DC92236501900300FAD /* View */,
-				DF466DC42236466000300FAD /* CustomViews */,
-				DFDBE4222232555B00A553E1 /* Style.swift */,
-				DF466DC32236455900300FAD /* Label */,
+				DFFC1B4B2268A3EA00159F27 /* UIStyling */,
 			);
 			path = Styling;
+			sourceTree = "<group>";
+		};
+		DFFC1B4B2268A3EA00159F27 /* UIStyling */ = {
+			isa = PBXGroup;
+			children = (
+				DF4458AE2254985600D800FB /* StylingProp.swift */,
+				DFDBE4222232555B00A553E1 /* Style.swift */,
+				DF645064225CB67D00A88D13 /* HeaderView */,
+				DF4458A12254974C00D800FB /* Button */,
+				DF4458992254974C00D800FB /* ImageView */,
+				DF44589D2254974C00D800FB /* StackView */,
+				DF466DC92236501900300FAD /* View */,
+				DF466DC32236455900300FAD /* Label */,
+			);
+			path = UIStyling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,19 +397,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF466DC822364D2600300FAD /* ViewComponent.swift in Sources */,
 				DFDBE4042232554100A553E1 /* ViewController.swift in Sources */,
 				DFDBE4232232555B00A553E1 /* Style.swift in Sources */,
+				DF4458A92254974C00D800FB /* StackViewProp.swift in Sources */,
 				DFDBE42922325BC600A553E1 /* Label.swift in Sources */,
+				DF4458AF2254985600D800FB /* StylingProp.swift in Sources */,
 				DF466DD322368C1400300FAD /* ViewProp.swift in Sources */,
+				DF4458A62254974C00D800FB /* ImageView.swift in Sources */,
+				DF64506A225CB7BE00A88D13 /* HeaderView.swift in Sources */,
+				DF4458A72254974C00D800FB /* ImageViewProp.swift in Sources */,
+				DF645068225CB7B400A88D13 /* HeaderViewProp.swift in Sources */,
+				DF4458AA2254974C00D800FB /* StackViewStyle.swift in Sources */,
+				DF4458AB2254974C00D800FB /* ButtonProp.swift in Sources */,
 				DFDBE42722325A8800A553E1 /* LabelStyle.swift in Sources */,
+				DF64506C225CB7C700A88D13 /* HeaderStyle.swift in Sources */,
 				DF466DCB2236502300300FAD /* View.swift in Sources */,
+				DF4458A52254974C00D800FB /* ImageViewStyle.swift in Sources */,
+				DF4458A82254974C00D800FB /* StackView.swift in Sources */,
 				DF466DD122368BFE00300FAD /* ViewStyle.swift in Sources */,
+				DF645066225CB68D00A88D13 /* UIHeaderView.swift in Sources */,
 				DFDBE4022232554100A553E1 /* AppDelegate.swift in Sources */,
-				DF466DC62236467300300FAD /* CircleRedView.swift in Sources */,
-				DF466DCF223652A700300FAD /* DefaultView.swift in Sources */,
+				DF4458AD2254974C00D800FB /* ButtonStyle.swift in Sources */,
 				DFDBE425223255CD00A553E1 /* LabelProp.swift in Sources */,
-				DF466DCD223650E200300FAD /* FeaturedView.swift in Sources */,
+				DF4458AC2254974C00D800FB /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
