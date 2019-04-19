@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
-    lazy private var headerView = HeaderView(style: .loggedInUser)
+    lazy private var headerView = HeaderView(style: .guestUser)
     lazy private var titleLabel = Label(style: .title)
     lazy private var anotherTitleLabel = Label(style: .none)
     lazy private var descriptionLabel = Label(style: .homeDescription)
@@ -29,8 +29,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         titleLabel.setProps(.text("Title Label"))
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            self.userDidLogout()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            self.userLogin()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
+                self.userBanned()
+            })
         }
         view.setNeedsUpdateConstraints()
     }
@@ -64,8 +67,12 @@ class ViewController: UIViewController {
         super.updateViewConstraints()
     }
     
-    func userDidLogout() {
-        headerView.style = .guestUser
+    func userLogin() {
+        headerView.style = .loggedInUser
+    }
+    
+    func userBanned() {
+        headerView.style = .bannedUser
     }
 }
 

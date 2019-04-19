@@ -20,6 +20,11 @@ class UIHeaderView: UIView {
             rightView.isHidden = newValue
         }
     }
+    public var hidetitleLabel = false {
+        willSet {
+            titleLabel.isHidden = newValue
+        }
+    }
     
     private var didSetupConstraints = false
     private lazy var leftView = View(style: .gradientedCircle(50))

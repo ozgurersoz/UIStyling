@@ -13,6 +13,7 @@ enum HeaderViewProp: StylingProp {
     typealias T = UIHeaderView
     case hideLeftView(Bool)
     case hideRightView(Bool)
+    case hideTitleLabel(Bool)
     
     func bind(to headerView: UIHeaderView) {
         switch self {
@@ -20,6 +21,8 @@ enum HeaderViewProp: StylingProp {
             headerView.hideLeftView = value
         case .hideRightView(let value):
             headerView.hideRightView = value
+        case .hideTitleLabel(let value):
+            headerView.hidetitleLabel = value
         }
     }
 }

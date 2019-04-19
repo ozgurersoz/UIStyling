@@ -15,17 +15,21 @@ enum HeaderViewStyle {
         switch self {
         case .guestUser:
             return .with(
-                .hideRightView(true)
+                .hideRightView(true),
+                .hideLeftView(true),
+                .hideTitleLabel(false)
             )
         case .loggedInUser:
             return .with(
                 .hideRightView(false),
-                .hideLeftView(false)
+                .hideLeftView(false),
+                .hideTitleLabel(true)
             )
         case .bannedUser:
             return .with(
                 .hideRightView(true),
-                .hideLeftView(true)
+                .hideLeftView(true),
+                .hideTitleLabel(true)
             )
         }
     }
